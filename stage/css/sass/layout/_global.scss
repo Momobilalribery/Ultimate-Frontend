@@ -3,7 +3,6 @@
 }
 
 body {
-
 }
 
 .page {
@@ -13,6 +12,9 @@ body {
     min-height: 100%;
     transition: 0.3s;
     float: right;
-    will-change: width
+    will-change: width;
+    &.no-sidebar {
+      width: 100%
+    }
   }
 }
