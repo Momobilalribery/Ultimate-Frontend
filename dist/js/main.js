@@ -12,4 +12,46 @@ $(function() {
       .next('.child-links')
       .slideToggle();
   });
+  // Open / Close Fullscreen
+  $('.toggle-fullscreen').on('click', function () {
+    $(this).toggleClass('full-screen');
+    if ($(this).hasClass('full-screen')) { // Page Is Now Full Screen
+      openFullscreen();
+    } else { // Page Is Not Full Screen
+      closeFullscreen();
+    }
+  });
 });
+
+var elem = document.documentElement;
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullscreen) {
+    /* Firefox */
+    elem.mozRequestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    /* IE/Edge */
+    elem.msRequestFullscreen();
+
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullscreen) {
+    /* Firefox */
+    document.mozCancelFullscreen();
+  } else if (document.webkitCancelFullscreen) {
+    /* Chrome, Safari and Opera */
+    document.webkitCancelFullscreen();
+  } else if (document.msExiFullscreen) {
+    /* IE/Edge */
+    elem.msExitFullscreen();
+  }
+}

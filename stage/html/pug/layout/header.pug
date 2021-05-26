@@ -1,7 +1,7 @@
 .header
   i.fa.fa-exchange.fa-lg.toggle-sidebar
   .dropdown.notifications-container
-    i.fa.fa-bell.fa-lg.toggle-otifications#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+    i.fa.fa-bell.fa-lg.header-icon.toggle-otifications#notifications(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
     .dropdown-menu(aria-labelledby='notifications')
       .noti-head
         | notifications
@@ -9,18 +9,19 @@
       .noti-content
         ul.list-unstyled
           li
-            i.fa.fa-envelope-o.fa-lg
+            i.fa.fa-envelope-o.fa-lg.fa-envelope
             | You Get Email From Bilal
           li
-            i.fa.fa-money.fa-lg
+            i.fa.fa-money.fa-lg.fa-money
             | You Get Money From Bilal
           li
-            i.fa.fa-thumbs-o-up.fa-lg
+            i.fa.fa-thumbs-o-up.fa-lg.fa-thumbs
             | You Get Like From Bilal
           li
-            i.fa.fa-envelope-o.fa-lg
+            i.fa.fa-envelope-o.fa-lg.fa-envelope
             | You Get Email From Bilal
           li
-            i.fa.fa-money.fa-lg
+            i.fa.fa-money.fa-lg.fa-money
             | You Get Money From Bilal
       .noti-foot.text-center: a(href="#") Viwe All Notifications
+  i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
