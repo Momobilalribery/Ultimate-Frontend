@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Homepage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/main.css"/><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"/>
   </head>
   <body>
     <div class="page home-page">
@@ -32,7 +32,23 @@
         </ul>
       </div>
       <div class="content-area">
-        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg toggle-otifications" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">notifications<span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope-o fa-lg"></i>You Get Email From Bilal</li>
+                  <li><i class="fa fa-money fa-lg"></i>You Get Money From Bilal</li>
+                  <li><i class="fa fa-thumbs-o-up fa-lg"></i>You Get Like From Bilal</li>
+                  <li><i class="fa fa-envelope-o fa-lg"></i>You Get Email From Bilal</li>
+                  <li><i class="fa fa-money fa-lg"></i>You Get Money From Bilal</li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">Viwe All Notifications</a></div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">
