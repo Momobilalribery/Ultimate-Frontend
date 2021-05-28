@@ -25,3 +25,32 @@
             | You Get Money From Bilal
       .noti-foot.text-center: a(href="#") Viwe All Notifications
   i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/01.jpg", alt="User Avatar")
+      span.user Bilal Ribery
+      i.fa.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Bilal Ribery
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Added Comment on Post "How To Make"
+        li Created podt on Category "Sciense"
+        li Created Chart on Charts Page
+        li Added Comment on Post "How To Make Two"
+      hr
+      .row.usermenu-links
+        .col
+          .link-box
+            i.fa.fa-gear.fa-lg.fa-fw.fa-gear
+            span Settings
+        .col
+          .link-box
+            i.fa.fa-user.fa-lg.fa-fw.fa-user
+            span My Profile
+        .col
+          .link-box
+            i.fa.fa-power-off.fa-lg.fa-fw.fa-power
+            span Logout
